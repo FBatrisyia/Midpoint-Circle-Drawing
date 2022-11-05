@@ -4,7 +4,9 @@ import streamlit as st
 def midpointCircleDrawing(x_center, y_center, radius):
   x = radius
   y = 0
-
+  
+  st.header("Midpoint Drawing Circle Algorithm")
+  
   #Initial point
   print("(", x + x_center, ", ", y + y_center, ")", sep = "", end = "")
 
