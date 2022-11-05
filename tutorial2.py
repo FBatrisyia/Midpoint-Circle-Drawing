@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import streamlit as st
 
 def midpointCircleDrawing(x_center, y_center, radius):
   x = radius
@@ -12,13 +13,13 @@ def midpointCircleDrawing(x_center, y_center, radius):
   if(radius > 0):
 
     #second quad
-    print("(", x + x_center, ", ", -y + y_center, ")", sep = "", end = "")
+    st.write("(", x + x_center, ", ", -y + y_center, ")", sep = "", end = "")
 
     #third quad
-    print("(", y + x_center, ",", x + y_center, ")", sep = "", end = "")
+    st.write("(", y + x_center, ",", x + y_center, ")", sep = "", end = "")
 
     #fourth quad
-    print("(", -y + x_center, ",", x + y_center, ")", sep = "", end = "")
+    st.write("(", -y + x_center, ",", x + y_center, ")", sep = "", end = "")
 
     #initializing p
     P = 1 - radius
@@ -38,16 +39,16 @@ def midpointCircleDrawing(x_center, y_center, radius):
       if(x < y):
         break
 
-      print("\n(", x + x_center, ", ", y + y_center,")", sep = "", end = "")
-      print("(", -x + x_center, ", ", y + y_center,")", sep = "", end = "")
-      print("(", x + x_center, ", ", -y + y_center,")", sep = "", end = "")
-      print("(", -x + x_center, ", ", -y + y_center,")", sep = "", end = "")
+      st.write("\n(", x + x_center, ", ", y + y_center,")", sep = "", end = "")
+      st.write("(", -x + x_center, ", ", y + y_center,")", sep = "", end = "")
+      st.write("(", x + x_center, ", ", -y + y_center,")", sep = "", end = "")
+      st.write("(", -x + x_center, ", ", -y + y_center,")", sep = "", end = "")
 
       if(x != y):
-            print("\n(", y + x_center, ", ", x + y_center,")", sep = "", end = "")
-            print("(", -y + x_center, ", ", x + y_center,")", sep = "", end = "")
-            print("(", y + x_center, ", ", -x + y_center, ")", sep = "", end = "")
-            print("(", -y + x_center, ", ", -x + y_center, ")", sep = "", end = "")
+            st.write("\n(", y + x_center, ", ", x + y_center,")", sep = "", end = "")
+            st.write("(", -y + x_center, ", ", x + y_center,")", sep = "", end = "")
+            st.write("(", y + x_center, ", ", -x + y_center, ")", sep = "", end = "")
+            st.write("(", -y + x_center, ", ", -x + y_center, ")", sep = "", end = "")
   
 if __name__=="__main__":
     midpointCircleDrawing(0, 0, 10)
