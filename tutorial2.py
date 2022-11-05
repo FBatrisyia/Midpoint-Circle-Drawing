@@ -41,10 +41,8 @@ def midpointCircleDrawing(x_center, y_center, radius):
       if(x < y):
         break
 
-      st.write("\n(", x + x_center, ", ", y + y_center,")", sep = "", end = "")
-      st.write("(", -x + x_center, ", ", y + y_center,")", sep = "", end = "")
-      st.write("(", x + x_center, ", ", -y + y_center,")", sep = "", end = "")
-      st.write("(", -x + x_center, ", ", -y + y_center,")", sep = "", end = "")
+      st.write(("\n(", x + x_center, ", ", y + y_center,")"), ("(", -x + x_center, ", ", y + y_center,")"), 
+               ("(", x + x_center, ", ", -y + y_center,")"), ("(", -x + x_center, ", ", -y + y_center,")"))
 
       if(x != y):
             st.write("\n(", y + x_center, ", ", x + y_center,")", sep = "", end = "")
