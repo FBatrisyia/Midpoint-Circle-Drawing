@@ -6,7 +6,7 @@ def midpointCircleDrawing(x_center, y_center, radius):
   y = 0
   
   st.header("Midpoint Drawing Circle Algorithm")
-  st.write("x = 0, y = 0, radius = 10)
+  st.write("x = 0, y = 0, radius = 10")
   
   #Initial point
   st.write("(", x + x_center, ", ", y + y_center, ")", sep = "", end = "")
